@@ -1,0 +1,68 @@
+
+body {
+    background-color: pink;
+    margin: 0px;
+}
+
+.navbar {
+    display: flex;
+    color: white;
+    font-size: xx-large;
+    padding-left: 1rem;
+    padding-right: 1rem;  
+    background-color: #ec69a5;; 
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+}
+
+.navbar p {
+    margin: 30px auto 30px ;
+}
+
+.osu-form {
+    display: block;
+    align-items: center;
+    border-radius: 0.75rem;
+    width: min-content;
+    margin: 300px auto 300px;
+    background-color: white;
+}
+
+.osu-form input {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    margin-top: 0.5rem;
+    text-align: center;
+    align-items: center;
+    width: max-content; 
+    border-radius: 0.75rem;
+    border: 0;
+}
+
+.osu-form input:focus {
+    outline:none
+}
+
+.osu-form form {
+
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.osu-form button {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; 
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; 
+    background-color: #ec69a5;
+    border: 0;
+    color: #ffffff; 
+    border-radius: 0.75rem; 
+}

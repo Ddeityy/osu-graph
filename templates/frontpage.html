@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="osu-form">
+    <form action="{{ url_for('frontpage')}}" method="post">
+        <input type="text" name="osu_username" placeholder="osu! username"<input>
+        <button type='submit'>Submit</button>
+    </form>        
+</div>
+{% endblock %}
