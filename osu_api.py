@@ -1,5 +1,7 @@
 import requests
+import os
 from datetime import datetime, timezone
+import dotenv
 
 API_URL = 'https://osu.ppy.sh/api/v2'
 TOKEN_URL = 'https://osu.ppy.sh/oauth/token'
@@ -13,10 +15,13 @@ HOURS = {
     "20:00": 0, "21:00": 0, "22:00": 0, "23:00": 0,
 }
 
+dotenv.load_dotenv()
+
 def get_token():
+    
     data = {
-        'client_id': 17705,
-        'client_secret': "8vsLSLP060Z9HxOjIMfAzFN2re0rTFwmjUwnlKWx",
+        'client_id': os.getenv("CLIENT_ID"),
+        'client_secret': os.getenv("CLIENT_SECRET"),
         'grant_type': 'client_credentials',
         'scope': 'public'
     }
